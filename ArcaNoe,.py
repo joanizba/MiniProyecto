@@ -16,12 +16,13 @@ class Arca:
     def agrar_alimento(cls, alimentos):
         return cls.alimentos.append(alimentos)
     
-    def alimentar_animal()
+    def alimentar_animal(cls, animal):
         return  0
     
     
-    def dar_agua():
-        return agua
+    def dar_agua(cls, animal):
+        return 0
 
 
-    def estado_arca():
+    def estado_arca(cls):
+        return 0
