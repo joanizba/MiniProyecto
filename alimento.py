@@ -4,4 +4,10 @@ class Alimento:
         self.cantidad = cantidad
         
     def usar(self, cantidad_u):
-        self.cantidad -= cantidad_u
+        if self.cantidad >= cantidad_u:
+            self.cantidad -= cantidad_u
+        else:
+            print(f"No hay suficiente {self.tipo} disponible.")
+    
+    
+ 
