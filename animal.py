@@ -1,3 +1,4 @@
+from MiniProyecto.ArcaNoe import Arca
 
 
 class Animal:
