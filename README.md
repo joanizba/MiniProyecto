@@ -1,6 +1,6 @@
 # 🐾 MiniProyecto: Arca de Noé
 
-**Autores**: Joan & Arman  
+**Autores**: Joan & Armen  
 **Repositorio**: [joanizba/MiniProyecto](https://github.com/joanizba/MiniProyecto)
 
 ## 📖 Descripción
