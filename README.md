@@ -43,17 +43,17 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
    continuación se describe cómo realizar las acciones disponibles.
    #### Menú Principal:
    Cuando ejecutes el programa, verás un menú con las siguientes opciones:
-      - 1- Agregar animal 
-      - 2- Agregar alimento 
-      - 3- Rellenar agua 
-      - 4- Subir sed a un animal 
-      - 5- Subir hambre a un animal 
-      - 6- Dar agua a un animal 
-      - 7- Alimentar a un animal 
-      - 20- Ver estado de un animal 
-      - 21- Ver estado general 
-      - 22- Ver estado del arca 
-      - 9- Salir
+      1. **Agregar animal**  
+      2. **Agregar alimento** 
+      3. **Rellenar agua** 
+      4. **Subir sed a un animal** 
+      5. **Subir hambre a un animal** 
+      6. **Dar agua a un animal** 
+      7. **Alimentar a un animal** 
+      20. **Ver estado de un animal** 
+      21. **Ver estado general** 
+      22. **Ver estado del arca** 
+      9.  **Salir**
 
    
 #### Ejemplos de Escenarios:
