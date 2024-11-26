@@ -125,8 +125,6 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
         Adiós, Noé. ¡Buena suerte con el diluvio!
      ```
 
----
-
 ### Personalización del Código
 
 Si necesitas personalizar el flujo o añadir nuevas funcionalidades, puedes modificar el archivo principal `main.py`. ¡Explora todas las posibilidades y adapta el sistema a tus necesidades específicas!
