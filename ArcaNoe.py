@@ -17,10 +17,12 @@ class Arca:
     def agregar_agua(cls, cantidad):
         cls.agua += cantidad
         return cls.agua
-    def alimentar_animal(cls, animal):
-        if animal in cls.animales:
-            cls.alimentos.pop()
-        return cls.alimentos
+    def alimentar_animal(cls, alimento):
+        
+        if alimento in cls.alimentos:
+            cls.alimentos.pop(alimento)
+        else:
+            print("No esiste")
     def dar_agua(cls, animal):
         for animals in cls.animales:
             if animals.nombre == animal:
