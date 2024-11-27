@@ -15,8 +15,10 @@ class Alimento:
     def es_adecuado( animal):
         if animal.tipo=="Carnivoro":
             cantidad = Carn.alimentar_carne(animal)
+            animal.alimentar(cantidad)
         elif animal.tipo == "Herbivoro":
             cantidad= Herb.alimentar_vegetal()
+            animal.alimentar(cantidad)
         elif animal.tipo =="Omnivoro":
             i=1
             for aliments in Arca.alimentos:
@@ -26,16 +28,18 @@ class Alimento:
                 try:
                     choose= int(input("Introduce el alimento de la lista con el que quieres alimentar, si quieres salir escribe 666"))
                     if 1<= choose <= len(Arca.alimentos):
-                        alimento_seleccionado = alimentos_carnics[choose-1]
+                        alimento_seleccionado = Arca.alimentos[choose-1]
                         cantidad = int(input("Cuanto le quieres dar(una unidad elimina 25 de hambre, las sobras se pierden)? "))
                         alimento_seleccionado.usar(cantidad)
+                        animal.alimentar(cantidad)
                     elif choose == 666:
                         break
                     else :
                         print("Fuera de rango")
+                    break
                 except ValueError:
                     print("Error")
-        animal.alimentar(cantidad)
+        
         
 class Carn(Alimento):
     def alimentar_carne(self):

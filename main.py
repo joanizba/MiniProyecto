@@ -18,7 +18,7 @@ print("Escoge que deseas hacer:\n")
 
 while True:
     try:
-        accion = int(input("1- Agregar animal\n2- Agregar alimento\n3- Rellenar agua\n4- Dar sed\n5- Dar hambre\n6- Dar agua\n7- Alimentar\n"))
+        accion = int(input("1- Agregar animal\n2- Agregar alimento\n3- Rellenar agua\n4- Dar sed\n5- Dar hambre\n6- Dar agua\n7- Alimentar\n8- Estado animal\n9- Lista animales y alimentos\n10- Estado del arca\n11- Salir"))
         if accion == 1:
             nombre_an = input("Qué animal es? ")
             while True:
@@ -62,7 +62,7 @@ while True:
             animal_sed= input("A que animal le quieres subir la sed?")
             for animal in arca.animales:
                 if animal.nombre == animal_sed:
-                    niv_sed = int(input("Que porcentaje de sed tiene el animal? A mas alto, mas sed tiene"))
+                    niv_sed = int(input("Que unidades de sed tiene el animal? A mas alto, mas sed tiene"))
                     animal.dar_sed(niv_sed)
                     break
             else:
@@ -71,7 +71,7 @@ while True:
             animal_hamb= input("A que animal le quieres subir el hambre?")
             for animal in arca.animales:
                 if animal.nombre == animal_hamb:
-                    hambruna = int(input("Que porcentaje de hambre tiene el animal? A mas alto, mas hambre tiene"))
+                    hambruna = int(input("Que unidades de hambre tiene el animal? A mas alto, mas hambre tiene"))
                     animal.dar_hambre(hambruna)
                     break
             else:
@@ -90,21 +90,21 @@ while True:
                     else :
                         Alimento.es_adecuado(animals)
 
-        elif accion==20:
+        elif accion==8:
             a_estado= input("De que animal quieres saber el estado? ")
             for animal in arca.animales:
                 if animal.nombre.lower() == a_estado.lower():
                     animal.estado()
-        elif accion == 21:
+        elif accion == 9:
             print("ANIMALES | TIPO\n")
             for animal in arca.animales:
                 print(f"{animal.nombre} | {animal.tipo}")
             print("ALIMENTOS | CANTIDAD | TIPO \n")
             for alimento in arca.alimentos:
                 print(f"{alimento.nombre} | {alimento.cantidad} | {alimento.tipo}")
-        elif accion == 9:
+        elif accion == 11:
             break
-        elif accion == 22:
+        elif accion == 10:
             arca.estado_arca()
     except ValueError:
         print("Que haces?")
