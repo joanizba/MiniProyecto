@@ -29,9 +29,7 @@ class Arca:
                 if animals.sed > 0:
                     litros = cls.agua* 25
                     litros -= animals.sed
-                    print(litros)
                     cls.agua = litros //25
-                    print(cls.agua)
                     if litros%25 != 0:
                         cls.agua_sobrante += litros%25
                         if cls.agua_sobrante == 25:
