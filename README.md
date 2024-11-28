@@ -7,6 +7,10 @@
 
 Este proyecto implementa una simulación de la famosa **Arca de Noé** utilizando programación orientada a objetos (OOP) en Python. La simulación incluye clases para modelar animales, alimentos y el propio arca, con métodos para gestionar los recursos y mantener a los animales alimentados e hidratados.
 
+## 📖 Planificación
+
+link trello: https://trello.com/invite/b/67474313d4b9bda22136393d/ATTI63ec447fddfc9dc4d3013837327f9e93BCB1C611/ifp-ia-bd
+
 ## 🚀 Características
 
 - **Clases de Python**: Uso extensivo de OOP para definir `Animal`, `Alimento`, y `Arca`.
