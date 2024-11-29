@@ -16,6 +16,8 @@ class Arca:
         
     def agregar_agua(cls, cantidad):
         cls.agua += cantidad
+        if cls.agua >= 500:
+            cls.agua -= cantidad
         return cls.agua
     def alimentar_animal(cls, alimento):
         
